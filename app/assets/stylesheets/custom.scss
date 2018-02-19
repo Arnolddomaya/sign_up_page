@@ -2,72 +2,116 @@
 
 
 
-.center{
-  display: block;
-  margin: auto;
-  margin-top: 5%;
-  border-radius: 10px;
-  width: 50%;
-  position: relative;
-  background-color: red;
-
-  border: 2px solid black;
-  height: 100%;
-
-  .left{
-    display: block;
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-
-
-    background-color: #0090FF;
-    padding-bottom: 190px;
-    color: white;
-  }
-
-  .right{
-    display: block;
-    background-color: AntiqueWhite;
-    position:absolute;
-    top:0;
-
-    right:0;
-    width:50%;
 
 
 
-    .right-top
-    {
-      padding: 10px 20px;
 
-      .field{
-        padding-top:0;
-      }
-
-    }
-  }
-
+body {
+  background-image: image-url('arriere.jpg');
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  font-size : 20px;
+  font-family: 'Lato', sans-serif;
+  font-size : 20px;
+}
+.center {
+    display: flex;
+    width: 50%;
+    margin: auto;
+    height: 65%;
+    margin-top: 5%;
 
 
 }
 
+.left {
+    width: 65%;
+    background-color: #00B0FF;
+    color : white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    height: 100%;
+
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+    .title {
+        padding-bottom: 2%;
+        margin-left: 6%;
+        margin-top: 35%;
+
+        hr{
+        background-color: #50D5AA;
+        height: 2px;
+        width: 40%;
+        border: none;
+        float: left;
+        padding-top: -3%;
+        }
+
+    }
+
+
+    h1 {
+    font-size: 200%;
+    font-family: sans-serif;
+    line-height: 1px;
+    text-align: left;
+    }
+
+    h3{
+    font-size: 70%;
+    line-height: 2px;
+    text-align: left;
+    }
+    .pub{
+        line-height: 2pt;
+
+        margin-bottom: 25%;
+    }
+
+    p{
+        font-size: 70%;
+        padding-left: 8%;
+    }
+}
 
 
 
+.right {
+    width: 50%;
+    background-color: white;
+    color : black;
+    display: flex;
+    flex-direction: column;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    justify-content: space-between;
+    height: 100%;
+    
 
+    .right-top
+    {
+      padding-left: 10%;
+      padding-right: 10%;
+      padding-top:12%;
 
-// #div-1a {
-//  position:absolute;
-//  top:0;
-//  right:0;
-//  width:200px;
-// }
+      p{
+        font-size: 70%;
 
+      }
 
+      .field{
+        padding-top:-1%;
 
-
+      }
+    }
+}
 
 
 
@@ -80,6 +124,7 @@ input {
     border-radius: 4px;
     background-size: contain;
     background-repeat: no-repeat;
+    border: 1px solid #cacfd2;
 
 }
 input[type=email] {
@@ -92,7 +137,7 @@ input[type=password] {
 
 
 input[type=submit] {
-  background-color: #0090FF;
+  background-color: #00B0FF;
   color: white;
   margin: 8px 0;
   border: none;
